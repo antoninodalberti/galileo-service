@@ -15,6 +15,7 @@ import javax.ws.rs.core.MediaType;
 
 import com.google.gson.Gson;
 
+import bean.DBVersion;
 import bean.Result;
 import bean.Visits;
 import storage.DB;
@@ -45,6 +46,13 @@ public class Service extends Application {
 	public String sayHello() {
 		return "<html> " + "<title>" + "Hello World RESTful Jersey" + "</title>" + "<body><h1>"
 				+ "Hello World RESTful Jersey" + "</body></h1>" + "</html> ";
+	}
+	
+	@GET @Path("/getDBversion") @Produces(MediaType.APPLICATION_JSON)
+	public DBVersion getDBVersion() {
+		DBVersion dbv = new DBVersion();
+		dbv.version = JsonStorage.getJsonStorage().getDB().version;
+		return dbv;
 	}
 	
 	@GET @Path("/getMacroareas") @Produces(MediaType.APPLICATION_JSON)
