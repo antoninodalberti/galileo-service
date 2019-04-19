@@ -2,7 +2,6 @@ package rest;
 
 import java.util.Set;
 import java.util.HashSet;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 import javax.ws.rs.ApplicationPath;
@@ -11,7 +10,6 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.core.MediaType;
 
@@ -31,8 +29,8 @@ public class Service extends Application {
 				+ "Hello World RESTful Jersey" + "</body></h1>" + "</html> ";
 	}
 	
-	@POST @Path("/putStatistics") @Produces(MediaType.APPLICATION_JSON) @Consumes(MediaType.APPLICATION_JSON)
-	public Result putStatistics(Visits visits) {
+	@POST @Path("/updateStatistics") @Produces(MediaType.APPLICATION_JSON) @Consumes(MediaType.APPLICATION_JSON)
+	public Result updateStatistics(Visits visits) {
 		Result res = new Result();
 		res.success = true;
 		return res;
