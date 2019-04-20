@@ -1,4 +1,4 @@
-package storage;
+package bean;
 
 public class Coordinates {
 	public double latitude;

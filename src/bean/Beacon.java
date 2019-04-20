@@ -1,4 +1,4 @@
-package storage;
+package bean;
 
 public class Beacon {
 	public String label;

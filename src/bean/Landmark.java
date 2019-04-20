@@ -1,4 +1,4 @@
-package storage;
+package bean;
 
 public class Landmark {
 	public String name;

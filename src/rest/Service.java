@@ -2,6 +2,7 @@ package rest;
 
 import java.util.Set;
 import java.util.HashSet;
+import java.nio.file.Paths;
 import java.util.Arrays;
 
 import javax.ws.rs.ApplicationPath;
@@ -15,10 +16,10 @@ import javax.ws.rs.core.MediaType;
 
 import com.google.gson.Gson;
 
+import bean.DB;
 import bean.DBVersion;
 import bean.Result;
 import bean.Visits;
-import storage.DB;
 import storage.JsonStorage;
 
 @ApplicationPath("/")
