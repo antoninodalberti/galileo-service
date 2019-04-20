@@ -24,7 +24,7 @@ import storage.JsonStorage;
 @ApplicationPath("/")
 public class Service extends Application {
 	
-	//ulr for json DB : https://jsonblob.com/40440c40-ff09-11e8-8917-215984a6b448
+	//url for json DB : https://jsonblob.com/40440c40-ff09-11e8-8917-215984a6b448
 	//put content in the string
 	//String db = "";
 
@@ -32,7 +32,7 @@ public class Service extends Application {
 		return new HashSet<Class<?>>(Arrays.asList(Service.class));
 	}
 	
-	/*
+	/*To init the json File on the server
 	@GET @Path("/init") @Produces(MediaType.APPLICATION_JSON)
 	public Result init() {
 		JsonStorage jsonStor = JsonStorage.getJsonStorage();
@@ -48,7 +48,7 @@ public class Service extends Application {
 				+ "Hello World RESTful Jersey" + "</body></h1>" + "</html> ";
 	}
 	
-	@GET @Path("/getDBversion") @Produces(MediaType.APPLICATION_JSON)
+	@GET @Path("/getDBVersion") @Produces(MediaType.APPLICATION_JSON)
 	public DBVersion getDBVersion() {
 		DBVersion dbv = new DBVersion();
 		dbv.version = JsonStorage.getJsonStorage().getDB().version;
