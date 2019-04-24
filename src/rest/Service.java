@@ -1,10 +1,5 @@
 package rest;
 
-import java.util.Set;
-import java.util.HashSet;
-import java.nio.file.Paths;
-import java.util.Arrays;
-
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -14,26 +9,21 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.core.MediaType;
 
-import com.google.gson.Gson;
-
 import bean.DB;
 import bean.DBVersion;
 import bean.Result;
 import bean.Visits;
 import storage.JsonStorage;
 
-@ApplicationPath("/")
+@ApplicationPath("/") @Path("/")
 public class Service extends Application {
 	
-	//url for json DB : https://jsonblob.com/40440c40-ff09-11e8-8917-215984a6b448
-	//put content in the string
-	//String db = "";
-
-	public Set<Class<?>> getClasses() {
-		return new HashSet<Class<?>>(Arrays.asList(Service.class));
-	}
+	/*
+	url for json DB : https://jsonblob.com/40440c40-ff09-11e8-8917-215984a6b448
+	put content in the string
+	String db = "";
 	
-	/*To init the json File on the server
+	To init the json File on the server
 	@GET @Path("/init") @Produces(MediaType.APPLICATION_JSON)
 	public Result init() {
 		JsonStorage jsonStor = JsonStorage.getJsonStorage();
@@ -42,6 +32,7 @@ public class Service extends Application {
 		res.success = true;
 		return res;
 	}*/
+
 
 	@GET @Path("/hi") @Produces(MediaType.TEXT_HTML)
 	public String sayHello() {
