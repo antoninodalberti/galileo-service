@@ -18,21 +18,18 @@ import storage.JsonStorage;
 @ApplicationPath("/") @Path("/")
 public class Service extends Application {
 	
-	/*
-	url for json DB : https://jsonblob.com/40440c40-ff09-11e8-8917-215984a6b448
-	put content in the string
-	String db = "";
 	
-	To init the json File on the server
-	@GET @Path("/init") @Produces(MediaType.APPLICATION_JSON)
-	public Result init() {
+	//url for json DB : https://jsonblob.com/40440c40-ff09-11e8-8917-215984a6b448
+	
+	//To init the json File on the server
+	@GET @Path("/init") @Consumes(MediaType.APPLICATION_JSON) @Produces(MediaType.APPLICATION_JSON)
+	public Result init(DB db) {
 		JsonStorage jsonStor = JsonStorage.getJsonStorage();
-		jsonStor.saveDB(new Gson().fromJson(db, DB.class));
+		jsonStor.putDB(db);
 		Result res = new Result();
 		res.success = true;
 		return res;
-	}*/
-
+	}
 
 	@GET @Path("/hi") @Produces(MediaType.TEXT_HTML)
 	public String sayHello() {

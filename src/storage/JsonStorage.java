@@ -8,6 +8,7 @@ import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 
 import bean.DB;
 import bean.Landmark;
@@ -38,6 +39,11 @@ public class JsonStorage {
 			}
 		}
 		return db;
+	}
+	
+	public void putDB(DB newDb) {
+			db = newDb;
+			saveDB();
 	}
 
 	public void saveDB() {
