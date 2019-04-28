@@ -1,0 +1,181 @@
+{
+	"macroareas": [
+		{
+			"name": "Piazza dei Miracoli",
+			"center": {
+				"latitude": 43.7227764,
+				"longitude": 10.3949551
+			},
+			"radius": 220.0,
+			"img": "piazza_miracoli",
+			"description": "La piazza del Duomo è il centro artistico e turistico più importante di Pisa. Annoverata fra i Patrimoni dell\u0027Umanità dall\u0027UNESCO dal 1987, vi si possono ammirare i monumenti che formano il centro della vita religiosa cittadina, detti miracoli (da Gabriele d\u0027Annunzio del 1910) per la loro bellezza e originalità: la Cattedrale, il Battistero, il Campo Santo e il Campanile. Da ciò deriva il nome popolare di piazza dei Miracoli diffusosi poi nel dopoguerra, era del turismo di massa.",
+			"landmarks": [
+				{
+					"name": "Cattedrale di Pisa",
+					"beacon": {
+						"label": "mipj",
+						"coordinates": {
+							"latitude": 43.7231051,
+							"longitude": 10.3950923
+						}
+					},
+					"description": "Il lampadario per incenso al centro della navata è detto di Galileo Galilei, perché la leggenda vuole che il grande scienziato abbia formulato la sua teoria sull\u0027isocronismo del pendolo guardandone l\u0027oscillazione dal soffitto della navata. L\u0027originale, diverso e molto più piccolo, però si trova oggi nella cappella Aulla in Campo Santo.",
+					"content_url": "https://it.wikipedia.org/wiki/Duomo_di_Pisa",
+					"img_name": "cattedrale",
+					"visits": 0
+				},
+				{
+					"name": "Battistero di Pisa",
+					"beacon": {
+						"label": "MKoU",
+						"coordinates": {
+							"latitude": 43.723309,
+							"longitude": 10.394162
+						}
+					},
+					"description": "Iniziato il 15 agosto 1152 sotto la direzione dell\u0027architetto pisano Diotisalvi, il Battistero, capolavoro dell\u0027architettura romanica, fu ampliato in più riprese nel corso del XIII secolo (da Nicola e Giovanni Pisano), del XIV secolo e quindi nell\u0027800. Il 19 febbraio 1564 vi veniva battezzato Galileo Galilei",
+					"content_url": "https://it.wikipedia.org/wiki/Battistero_di_San_Giovanni_(Pisa)",
+					"img_name": "battistero",
+					"visits": 0
+				},
+				{
+					"name": "Torre di Pisa",
+					"beacon": {
+						"label": "mgvd",
+						"coordinates": {
+							"latitude": 43.7231315,
+							"longitude": 10.3966985
+						}
+					},
+					"description": "Si ricorda spesso la leggenda secondo la quale Galileo, per dimostrare la sua legge di caduta dei gravi, sarebbe salito sulla torre di Pisa e avrebbe fatto cadere oggetti di materiale diverso per verificare la fondatezza delle sue teorie. Questo ” racconto ” è falso ed è solo una leggenda per mancanza di prove storiche.",
+					"content_url": "https://it.wikipedia.org/wiki/Torre_di_Pisa",
+					"img_name": "torre",
+					"visits": 0
+				},
+				{
+					"name": "Camposanto monumentale",
+					"beacon": {
+						"label": "ekuu",
+						"coordinates": {
+							"latitude": 43.723797,
+							"longitude": 10.39506
+						}
+					},
+					"description": "Sul braccio nord si trova la cappella Aulla, qui è conservata l\u0027originale lampada di Galileo, un tempo sospesa in cattedrale e che effettivamente il grande scienziato pisano vide oscillare e che gli fornì l\u0027idea per la sua teoria sull\u0027isocronismo del pendolo.",
+					"content_url": "https://it.wikipedia.org/wiki/Camposanto_monumentale",
+					"img_name": "camposanto",
+					"visits": 0
+				}
+			]
+		},
+		{
+			"name": "Università di Pisa",
+			"center": {
+				"latitude": 43.717562,
+				"longitude": 10.398304
+			},
+			"radius": 200.0,
+			"img": "sapienza",
+			"description": "L\u0027Università di Pisa (UniPi) è una delle più antiche università italiane e d\u0027Europa. Fondata nel 1343, è il secondo ateneo in Toscana dopo Firenze e l\u0027ottavo in Italia. Tra i luoghi presenti in quest\u0027area si trovano Palazzo della Sapienza e Palazzo alla Giornata.",
+			"landmarks": [
+				{
+					"name": "Domus Galilaeana",
+					"beacon": {
+						"label": "zhje",
+						"coordinates": {
+							"latitude": 43.718395,
+							"longitude": 10.397262
+						}
+					},
+					"description": "La Domus Galilaeana è un\u0027istituzione culturale di Pisa. In particolare l\u0027istituzione raccoglie tutte le pubblicazioni antiche e moderne su Galileo e coordina gli studi di storia della scienza, grazie a un fornitissimo archivio e ad un\u0027importante biblioteca specializzata.",
+					"content_url": "https://it.wikipedia.org/wiki/Domus_Galilaeana",
+					"img_name": "domus",
+					"visits": 0
+				},
+				{
+					"name": "Palazzo alla Giornata",
+					"beacon": {
+						"label": "aaaa",
+						"coordinates": {
+							"latitude": 43.716617,
+							"longitude": 10.398892
+						}
+					},
+					"description": "La sala rossa del palazzo alla Giornata, sede del rettorato, è stata intitolata a Galileo Galilei ed impreziosita di un ritratto del celebre fisico pisano che diede inizio ad un nuovo corso della scienza: si tratta di una replica del quadro secentesco dello scienziato, opera di Justus Sustermann, custodito al museo degli Uffizi.",
+					"content_url": "https://it.wikipedia.org/wiki/Palazzo_alla_Giornata",
+					"img_name": "rettorato",
+					"visits": 0
+				},
+				{
+					"name": "Museo di Palazzo Reale",
+					"beacon": {
+						"label": "aaab",
+						"coordinates": {
+							"latitude": 43.716342,
+							"longitude": 10.397031
+						}
+					},
+					"description": "Il museo ha sede nella residenza di corte realizzata tra 1583 e 1587 da Bernardo Buontalenti per Francesco I de’ Medici. La nuova costruzione inglobò alcuni edifici preesistenti, tra cui la duecentesca torre della Verga d’Oro dove Galileo fece osservare al granduca, con il suo cannocchiale, i satelliti di Giove.",
+					"content_url": "https://it.wikipedia.org/wiki/Museo_nazionale_di_palazzo_Reale",
+					"img_name": "palazzo_reale",
+					"visits": 0
+				},
+				{
+					"name": "Palazzo della Sapienza",
+					"beacon": {
+						"label": "aaac",
+						"coordinates": {
+							"latitude": 43.717277,
+							"longitude": 10.399644
+						}
+					},
+					"description": "L’ingresso all’Aula Magna Storica conserva al suo interno una statua di Galileo Galilei scolpita da P.E. Demi nel 1839. Dalla loggia superiore si accede all’Aula Magna Nuova eseguita nel 1923 e alla Biblioteca Universitaria ricca di volumi e periodici con più di un centinaio di incunaboli, manoscritti e lettere, fra le quali una di Galileo sulla caduta dei gravi.",
+					"content_url": "https://it.wikipedia.org/wiki/Palazzo_della_Sapienza",
+					"img_name": "sapienza",
+					"visits": 0
+				}
+			]
+		},
+		{
+			"name": "Case di Galileo",
+			"center": {
+				"latitude": 43.716918,
+				"longitude": 10.404211
+			},
+			"radius": 200.0,
+			"img": "casa",
+			"description": "Nell\u0027arco dei secoli la casa natale di Galileo Galilei a Pisa è stata localizzata in varie sedi. Nel novembre 1563 Vincenzo Galilei stipulò un contratto di affitto per una casa di proprietà della Famiglia Bocca in Pisa (all\u0027angolo tra Borgo Stretto e Via Mercanti). Successivamente dall\u0027atto di battesimo si risalì alla casa dei nonni di Galileo Galilei, casa Ammannati, dove fu finalmente collocata con ragionevole certezza la dimora natale del grande scienziato pisano.",
+			"landmarks": [
+				{
+					"name": "Casa Ammannati",
+					"beacon": {
+						"label": "aaad",
+						"coordinates": {
+							"latitude": 43.716378,
+							"longitude": 10.406247
+						}
+					},
+					"description": "La casa natale di Galileo Galilei apparteneva alla famiglia della madre ed era detta casa Ammannati. Giulia Ammannati di Villa Basilica di Pescia, madre di Galileo, acquistò la casa in Pisa con la dote nuziale di 100 scudi d\u0027oro ricevuti dallo zio Leone al momento del matrimonio con Vincenzo Galilei, musico, padre di Galileo.",
+					"content_url": "https://brunelleschi.imss.fi.it/itinerari/luogo/CasaNataleGalileoGalileiCasaAmmannati.html",
+					"img_name": "casa_ammannati",
+					"visits": 0
+				},
+				{
+					"name": "Casa Bocca",
+					"beacon": {
+						"label": "aaae",
+						"coordinates": {
+							"latitude": 43.717397,
+							"longitude": 10.402257
+						}
+					},
+					"description": "Nel novembre 1563 Vincenzo Galilei stipulò un contratto di affitto per una casa di proprietà della Famiglia Bocca in Pisa, dove andò ad abitare con la moglie Giulia Ammannati e dove teneva lezioni di musica. Una lapida fu apposta nel III centenario della morte di Galileo ed è tuttora visibile all\u0027angolo tra Borgo Largo e Via Mercanti.",
+					"content_url": "https://www.unipi.it/index.php/tutte-le-news/item/3677-la-dimora-natale-di-galileo-l%E2%80%99enigma-delle-tre-case",
+					"img_name": "casa_borgo",
+					"visits": 0
+				}
+			]
+		}
+	],
+	"version": 0
+}

@@ -1,22 +1,23 @@
 package storage;
 
 import java.io.IOException;
+import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.OpenOption;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonSyntaxException;
 
 import bean.DB;
 import bean.Landmark;
 import bean.Macroarea;
 
 public class JsonStorage {
-	//final private static String path = "/Users/nino/Workspace/GalileoServer/DB/db.json";
-	final private static String path = "D:\\db.json";
+	final private static String path = "/Users/nino/Workspace/GalileoServer/DB/db.json";
+	//final private static String path = "D:\\db.json";
 
 	private static JsonStorage currentStorage;
 	private DB db = null;
@@ -33,7 +34,7 @@ public class JsonStorage {
 	public DB getDB() {
 		if (db == null) {
 			try {
-				String contents = new String(Files.readAllBytes(Paths.get(path)));
+				String contents = new String(Files.readAllBytes(Paths.get(path)), "UTF-8");
 				db = new Gson().fromJson(contents, DB.class);
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -49,12 +50,18 @@ public class JsonStorage {
 
 	public void saveDB() {
 		String json = new Gson().toJson(db);
-		OpenOption[] options = new OpenOption[] { StandardOpenOption.CREATE, StandardOpenOption.WRITE };
+		CopyOption copOpt = StandardCopyOption.REPLACE_EXISTING;
 		try {
-			Files.write(Paths.get(path), json.getBytes(), options);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			Files.move(Paths.get(path), Paths.get(path+".tmp"), copOpt);
+			OpenOption[] options = new OpenOption[] { StandardOpenOption.CREATE, StandardOpenOption.WRITE};
+			try {
+				Files.write(Paths.get(path), json.getBytes("UTF-8"), options);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (IOException e1) {
+			e1.printStackTrace();
 		}
 	}
 

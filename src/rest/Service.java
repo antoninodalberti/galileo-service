@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.Encoded;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -70,7 +71,7 @@ public class Service extends Application {
 	public String showStatistics() {
 		DB db = JsonStorage.getJsonStorage().getDB();
 		ArrayList<Macroarea> macroareas = db.macroareas;
-		String s = "<html> " + "<title>" + "Statistiche" + "</title>" + "<head>" +
+		String s = "<html> " + "<head>" + "<title>" + "Statistiche" + "</title>" +
 		"<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>" +
 		"</head>" + "<body style=\"background-color: #EC1B28; font-family: Lato; color: white;\">" + 
 		"<h1>" + "Numero di visite ai luoghi GalileoPisaTour" + "</h1>";
