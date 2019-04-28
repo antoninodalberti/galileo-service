@@ -15,7 +15,8 @@ import bean.Landmark;
 import bean.Macroarea;
 
 public class JsonStorage {
-	final private static String path = "/Users/nino/Workspace/GalileoServer/DB/db.json";
+	//final private static String path = "/Users/nino/Workspace/GalileoServer/DB/db.json";
+	final private static String path = "D:\\db.json";
 
 	private static JsonStorage currentStorage;
 	private DB db = null;
@@ -69,4 +70,5 @@ public class JsonStorage {
 		}
 		saveDB();
 	}
+	
 }
