@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.Consumes;
-import javax.ws.rs.Encoded;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Application;
@@ -27,7 +27,7 @@ public class Service extends Application {
 	//url for json DB : https://jsonblob.com/40440c40-ff09-11e8-8917-215984a6b448
 	
 	//To init the json File on the server
-	@POST @Path("/init") @Consumes(MediaType.APPLICATION_JSON) @Produces(MediaType.APPLICATION_JSON)
+	@PUT @Path("/init") @Consumes(MediaType.APPLICATION_JSON) @Produces(MediaType.APPLICATION_JSON)
 	public Result init(DB db) {
 		JsonStorage jsonStor = JsonStorage.getJsonStorage();
 		jsonStor.putDB(db);

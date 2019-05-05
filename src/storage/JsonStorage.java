@@ -43,7 +43,7 @@ public class JsonStorage {
 		return db;
 	}
 	
-	public void putDB(DB newDb) {
+	synchronized public void putDB(DB newDb) {
 			db = newDb;
 			saveDB();
 	}
@@ -57,7 +57,6 @@ public class JsonStorage {
 			try {
 				Files.write(Paths.get(path), json.getBytes("UTF-8"), options);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		} catch (IOException e1) {
