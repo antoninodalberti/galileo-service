@@ -1,9 +1,11 @@
 package storage;
 
 import java.io.IOException;
+import java.nio.channels.SeekableByteChannel;
 import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.OpenOption;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.nio.file.StandardOpenOption;
@@ -16,8 +18,8 @@ import bean.Landmark;
 import bean.Macroarea;
 
 public class JsonStorage {
-	final private static String path = "/Users/nino/Workspace/GalileoServer/DB/db.json";
-	//final private static String path = "D:\\db.json";
+	//final private static String path = "/Users/nino/Workspace/GalileoServer/DB/db.json";
+	final private static String path = "C:\\GalileoDB\\db.json";
 
 	private static JsonStorage currentStorage;
 	private DB db = null;
