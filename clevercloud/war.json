@@ -1,6 +1,6 @@
 {
    "build": {
-      "type": "maven",
+      "type": "ant",
       "goal": "package"
    },
    "deploy": {
