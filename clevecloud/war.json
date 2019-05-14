@@ -1,0 +1,16 @@
+{
+   "build": {
+      "type": "maven",
+      "goal": "package"
+   },
+   "deploy": {
+      "container": "TOMCAT8",
+      "war": [
+         {
+            "file": "target/galileo-server.war",
+            "context": "/GalileoServer",
+            "checkMe": "/GalileoServer/ping"
+         }
+      ]
+   }
+}
