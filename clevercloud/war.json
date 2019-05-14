@@ -1,9 +1,4 @@
-{
-   "build": {
-      "type": "ant",
-      "goal": "package"
-   },
-   "deploy": {
+"deploy": {
       "container": "TOMCAT8",
       "war": [
          {
